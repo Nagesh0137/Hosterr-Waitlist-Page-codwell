@@ -1,0 +1,86 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Inter&family=Lato:wght@300&family=Outfit:wght@400;700&family=Playfair+Display:wght@500&family=Prata&display=swap');
+  body{
+    background-color:rgb(248, 243, 234);
+  }
+  .logo{
+    background-image:linear-gradient(to right, orange,red);
+}
+.info{
+  font-family: 'Lato', sans-serif; 
+  font-weight: bolder;
+  position:static;
+}
+.info h1{
+   font-size: 40px;
+   font-weight: bold;
+   font-family: 'Playfair Display', serif;
+}
+.info p{
+  font-family: 'Lato', sans-serif;
+  font-weight: bolder;
+}
+.shape{
+  position: relative;
+  top: 0%;
+}
+.blue{
+  width: 60%;
+  position:absolute;
+  top: 0%;
+  z-index: 1;
+  transform: rotate(-50deg);
+}
+.pink{
+  width: 60%;
+  position:absolute;
+  top: 0%;
+  z-index: 2;
+  transform: rotate(-35deg);
+
+}
+.purple{
+  width: 60%;
+  position:absolute;
+  top: 0%;
+  z-index: 3;
+  transform: rotate(-20deg);
+}
+.model{
+  position: absolute;
+  width: 60%;
+  z-index: 4;
+}
+.helper{
+ width: auto; 
+ float: left;
+ position:absolute;
+ bottom: 20px;
+ right: 120px;
+}
+.helptext{
+  margin-top: 10px;
+  margin-left: 10px;
+  font-family: 'Playfair Display', serif;
+
+}
+@media (max-width:666px) {
+  .mainshape{
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+  }
+ .info{
+  position: absolute;
+  top:60%;
+ }
+ .helper{
+  visibility: hidden;
+ }
+ .helpbox{
+  position:absolute;
+  bottom: 0px;
+  z-index: 99999999;
+
+ }
+}
